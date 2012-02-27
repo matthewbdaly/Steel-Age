@@ -13,6 +13,7 @@
             <div id="header">
             <h1><a href="<?php get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1>
             <h2><?php bloginfo('description'); ?></h2>
+            <!--[if lt IE 8]><p class="warning">You are using an outdated ve    rsion of Internet Explorer. For security reasons you should upgrade your browser (also this site will look a lot nicer!). Please go to Windows Updates and install the latest version.</p><![endif]-->
                 <div id="navBar">
                     <ul>
                         <?php wp_page_menu('show_home=Home'); ?>

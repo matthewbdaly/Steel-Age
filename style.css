@@ -298,6 +298,13 @@ h2 a:hover, h1 a:hover {
     color: #0000ff;
 }
 
+p.warning {
+    border: 1px solid red;
+    padding: 15px;
+    background-color: pink;
+    margin-bottom: 10px;
+}
+
 /* END FONTS AND TEXT */
 
 li.profileLink {
