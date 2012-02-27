@@ -144,6 +144,7 @@ body {
     float: right;
     background-color: #ffffff;
     margin-bottom: 50px;
+    border: 1px solid #000000;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -171,6 +172,7 @@ body {
 div.post {
     background-color: #ffffff;
     margin-bottom: 50px;
+    border: 1px solid #000000;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
