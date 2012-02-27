@@ -1,0 +1,324 @@
+/*
+Theme Name: Steel Age
+Theme URI: http://www.matthewdaly.co.uk
+Description: A simple WordPress theme with a brushed steel-like appearance
+Author: Matthew Daly
+Author URI: http://www.matthewdaly.co.uk
+
+A theme designed for my blog.
+
+*/
+
+/*****CSS RESET*******/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {  margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+/*****END RESET*******/
+
+/* BASIC LAYOUT */
+body {
+    background-color: #787878;
+    background-image:  url('images/backgroundGradient.png');
+    background-repeat: repeat-x;
+}
+
+#wrapper {
+    width: 900px;
+    margin: 0px auto;
+}
+
+#header {
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+}
+
+#navBar {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+#navBar ul {
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+#navBar li {
+    display: inline;
+}
+
+#navBar a {
+    display: block;
+    float: left;
+    background-color: #303030;
+    color: #ffffff;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #303030;
+    -moz-box-shadow: 0 0 10px #303030;
+    -webkit-box-shadow: 0 0 10px #303030;
+}
+
+#navBar a:hover {
+    background-color: #0000ff;
+}
+
+#navBar a:active {
+    position: relative;
+    top: 2px;
+}
+
+#searchform {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 10px #303030;
+    -moz-box-shadow: 0 0 10px #303030;
+    -webkit-box-shadow: 0 0 10px #303030;
+}
+
+#s {
+    margin-left: 10px;
+    margin-top: 15px;
+    position: relative;
+    top: -3px;
+    width: 130px;
+}
+
+#content {
+    width: 600px;
+    float: left;
+}
+
+#subwrapper {
+}
+
+#footer {
+    clear: both;
+    height: 80px;
+    width: 100%;
+    background-color: #000000;
+    box-shadow: 0 0 10px #303030;
+    -moz-box-shadow: 0 0 10px #303030;
+    -webkit-box-shadow: 0 0 10px #303030;
+}
+
+#footer p {
+    padding-top: 40px;
+    color: #ffffff;
+    margin-left: 140px;
+}
+
+#footer p a {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+#sidebar {
+    width: 200px;
+    float: right;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px #303030;
+    -moz-box-shadow: 0 0 10px #303030;
+    -webkit-box-shadow: 0 0 10px #303030;
+}
+
+#sidebar p {
+    padding-bottom: 10px;
+}
+
+#sidebar img {
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px #303030;
+    -moz-box-shadow: 0 0 10px #303030;
+    -webkit-box-shadow: 0 0 10px #303030;
+}
+
+#authorPic {
+    margin-bottom: 15px;
+}
+
+div.post {
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px #303030;
+    -moz-box-shadow: 0 0 10px #303030;
+    -webkit-box-shadow: 0 0 10px #303030;
+}
+
+.alignLeft, .alignRight {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.alignLeft a, .alignRight a {
+    font-size: 18px;
+    font-family: Asap;
+    color: #000000;
+}
+
+.alignLeft a:hover, .alignRight a:hover {
+    color: #0000ff;
+}
+
+/* END BASIC LAYOUT */
+
+/* FONTS AND TEXT */
+@font-face {
+    font-family: LeagueGothic;
+    src: url('fonts/leaguegothic-webfont.eot');
+    src: local('☺'),
+        url('fonts/leaguegothic-webfont.woff') format('woff'),
+        url('fonts/leaguegothic-webfont.ttf') format('truetype'),
+        url('fonts/leaguegothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Asap;
+    src: url('fonts/asap-regular-webfont.eot');
+    src: local('☺'),
+        url('fonts/asap-regular-webfont.woff') format('woff'),
+        url('fonts/asap-regular-webfont.ttf') format('truetype'),
+        url('fonts/asap-regular-webfont.svg#AsapRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: LeagueGothic;
+    font-size: 38px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: LeagueGothic;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: LeagueGothic;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-family: LeagueGothic;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+h5 {
+    font-family: LeagueGothic;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+h6 {
+    font-family: LeagueGothic;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+p, li , div.postContent {
+    font-family: Asap;
+    font-size: 12px;
+    line-height: 150%;
+    padding-bottom: 5px;
+}
+
+blockquote, pre, code {
+    padding: 15px;
+    margin: 10px 0px;
+    background-color: #e0e0e0;
+    width: 555px;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden;
+}
+
+blockquote p {
+    font-style: italic;
+}
+
+code {
+    font-size: 14px;
+}
+
+h2 a, h1 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h2 a:hover, h1 a:hover {
+    color: #0000ff;
+}
+
+/* END FONTS AND TEXT */
+
+li.profileLink {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    box-shadow: 0 0 10px #303030;
+    -moz-box-shadow: 0 0 10px #303030;
+    -webkit-box-shadow: 0 0 10px #303030;
+}
+
+li.profileLink img {
+    vertical-align: middle;
+}
+
+a.profileLinkImage:active {
+    position: relative;
+    top: 2px;
+}
+
+.profileLinkText {
+    margin-left: 10px;
+    font-family: LeagueGothic;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    top: 5px;
+}
