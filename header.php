@@ -7,7 +7,6 @@
         <?php wp_head(); ?>
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
             <title><?php bloginfo('name'); ?> <?php wp_title('-'); ?></title>
-        <script type="text/javascript" src="js/iepngfix_tilebg.js"></script>
     </head>
     <body>
         <div id="wrapper">

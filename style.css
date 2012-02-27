@@ -23,15 +23,23 @@ table { border-collapse: collapse; border-spacing: 0; }
 /*****END RESET*******/
 
 /* BASIC LAYOUT */
+html {
+    height: 100%;
+}
+
 body {
     background-color: #787878;
     background-image:  url('images/backgroundGradient.png');
     background-repeat: repeat-x;
+    height: 100%;
 }
 
 #wrapper {
     width: 900px;
     margin: 0px auto;
+    min-height: 100%;
+    margin-bottom: -80px;
+    position: relative;
 }
 
 #header {
@@ -113,6 +121,7 @@ body {
     clear: both;
     height: 80px;
     width: 100%;
+    bottom: 0;
     background-color: #000000;
     box-shadow: 0 0 10px #303030;
     -moz-box-shadow: 0 0 10px #303030;
