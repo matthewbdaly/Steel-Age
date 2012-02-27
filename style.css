@@ -182,7 +182,7 @@ div.post {
 
 .alignLeft, .alignRight {
     width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .alignLeft {
@@ -229,7 +229,7 @@ div.post {
 }
 
 h1 {
-    font-family: LeagueGothic;
+    font-family: LeagueGothic, "Lucida Sans", sans-serif;
     font-size: 38px;
     padding-bottom: 10px;
 }
