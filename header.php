@@ -16,9 +16,7 @@
             <h1><a href="<?php get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1>
             <h2><?php bloginfo('description'); ?></h2>
                 <div id="navBar">
-                    <ul>
-                        <?php wp_page_menu('show_home=Home'); ?>
-                    </ul>
+                    <?php wp_page_menu('show_home=Home'); ?>
                 </div>
             </div>
             <div id="subwrapper">
