@@ -11,8 +11,6 @@
                             </h2>
                             <div class="postContent">
                             <?php the_content(); ?>
-                            <h6><?php the_time('F jS, Y'); ?> by <?php the_author(); ?> </h6>
-                            <?php comments_template(); ?>
                             </div>
                         </div>
                         <?php endwhile; ?>
