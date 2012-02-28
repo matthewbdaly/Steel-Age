@@ -341,3 +341,42 @@ a.profileLinkImage:active {
     position: relative;
     top: 5px;
 }
+
+#post-tags {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+#post-tags li {
+    display: inline;
+}
+
+#post-tags a {
+    display: block;
+    float: left;
+    background-color: #303030;
+    color: #ffffff;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #303030;
+    -moz-box-shadow: 0 0 10px #303030;
+    -webkit-box-shadow: 0 0 10px #303030;
+}
+
+#post-tags a:hover {
+    background-color: #0000ff;
+}
+
+#post-tags a:active {
+    position: relative;
+    top: 2px;
+}
+
+#comments {
+    clear: both;
+}

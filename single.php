@@ -12,6 +12,7 @@
                             <div class="postContent">
                             <?php the_content(); ?>
                             <h6><?php the_time('F jS, Y'); ?> by <?php the_author(); ?> </h6>
+                            <div id="post-tags"><?php the_tags('<ul><li>', '</li><li>', '</li></ul>'); ?></div>
                             <?php comments_template(); ?>
                             </div>
                         </div>
