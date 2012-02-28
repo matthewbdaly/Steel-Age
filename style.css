@@ -345,6 +345,7 @@ a.profileLinkImage:active {
 #post-tags {
     width: 100%;
     margin: 10px 0px;
+    float: left;
 }
 
 #post-tags li {
@@ -377,6 +378,6 @@ a.profileLinkImage:active {
     top: 2px;
 }
 
-#comments {
+#disqus-thread {
     clear: both;
 }
