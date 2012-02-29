@@ -77,6 +77,7 @@ body {
     box-shadow: 0 0 10px #303030;
     -moz-box-shadow: 0 0 10px #303030;
     -webkit-box-shadow: 0 0 10px #303030;
+    text-shadow: 2px 2px 2px #303030;
 }
 
 #navBar a:hover {
@@ -367,6 +368,7 @@ a.profileLinkImage:active {
     box-shadow: 0 0 10px #303030;
     -moz-box-shadow: 0 0 10px #303030;
     -webkit-box-shadow: 0 0 10px #303030;
+    text-shadow: 2px 2px 2px #303030;
 }
 
 #post-tags a:hover {
